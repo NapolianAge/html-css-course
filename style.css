@@ -1,0 +1,89 @@
+/* =======================
+   ОСНОВНОЙ ПЛЕЕР
+======================= */
+
+audio {
+  width: 285px;                 /* ширина */
+  height: 30px;                 /* высота */
+  border-radius: 30px;          /* скругление */
+  background: #f5d6b3;          /* бежевый фон */
+  transition: 0.3s ease;        /* плавные эффекты */
+}
+
+/* внутренняя панель управления */
+audio::-webkit-media-controls-panel {
+  background-color: bisque;
+}
+
+/* =======================
+   HOVER ВСЕГО ПЛЕЕРА
+======================= */
+
+audio:hover {
+  box-shadow:
+    6px 6px 0 #000,              /* жёсткая чёрная тень */
+    0 0 25px rgba(200,0,0,0.7);  /* красное свечение */
+  transform: translate(-2px, -2px);
+}
+
+/* эффект нажатия */
+audio:active {
+  transform: translate(2px, 2px);
+  box-shadow:
+    2px 2px 0 #000,
+    0 0 15px rgba(200,0,0,0.6);
+}
+
+/* =======================
+   КНОПКА PLAY
+======================= */
+
+audio::-webkit-media-controls-play-button {
+  background-color: #b22222;     /* тёмно-красный */
+  border-radius: 50%;           /* круг */
+  transition: 0.2s;
+}
+
+/* убрать синий focus */
+audio::-webkit-media-controls-play-button:focus {
+  outline: none;
+}
+
+/* hover кнопки */
+audio::-webkit-media-controls-play-button:hover {
+  box-shadow:
+    0 0 15px rgba(255,0,0,0.8),
+    0 0 5px rgba(0,0,0,0.6);
+}
+
+/* =======================
+   ВРЕМЯ
+======================= */
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: brown;
+  font-weight: bold;
+}
+
+/* =======================
+   ГРОМКОСТЬ
+======================= */
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: brown;
+}
+
+/* кнопка "три точки" */
+audio::-webkit-media-controls-overflow-button {
+  color: brown;
+}
+
+/* =======================
+   ТАЙМЛАЙН
+======================= */
+
+audio::-webkit-media-controls-timeline-container {
+  padding: 0 8px;
+}
+
