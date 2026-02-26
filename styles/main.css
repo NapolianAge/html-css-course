@@ -1,0 +1,484 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    color:brown;
+}
+
+.layout {
+    width: 1024px;
+    margin: 0 auto;
+   }
+   table {
+    width: 100%;
+    border-collapse: collapse;
+   }
+    strong {
+            cursor: pointer;
+            color: darkred;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td,th {
+      border:1px solid black;
+    }
+    th {
+   background-color: rgb(225, 192, 152);
+    }
+    h1 {
+      color:blue;
+    }
+    section {
+        background-color:blanchedalmond;
+    }
+    #Image {
+        background-color: brown;
+    }
+    a [href="https://artchive.ru/res/media/img/oy1400/work/763/105281@2x.webp"] {
+        background-color: green;
+    }
+
+    a {
+        color: darkred;
+    }
+    section p a {
+        color: green;
+    }
+    h2 + p::selection{
+       text-transform: lowercase;
+       background-color:red;
+        
+    }
+    h1:hover {
+        text-decoration: line-through;
+        cursor: pointer;
+    
+    }
+    
+    h1 {
+        margin-top: 120px;
+    }
+    clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    header {
+        background-color: black;
+        height: 80px;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        left: 0;
+    }
+    .net {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+         
+    }
+
+    .cell {
+        width: 300px;
+        height: 300px;
+        border: 1px solid brown;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        background-color: gold;
+        position: relative;
+    }
+    .cell:after {
+        content: "text";
+        display: flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        transform: rotate(-20deg);
+        padding-left: 5px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: purple;
+    }
+    .cell:before {
+        content: "arcaid";
+        padding-right: 5px;
+    }
+    .cell:nth-child(3n + 2) {
+       background-color: gold;
+    }
+    button:disabled {
+        color: coral;
+    }
+    input:focus {
+        box-shadow: 0 0 10px orange;;
+    }
+     .header {
+     background-color: blue;
+    }
+    header nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    z-index: 10;
+    justify-content: space-between;
+    }
+
+   .sample {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+   }
+   .sample__cell {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #0000;
+   }
+   header nav a {
+    display: inline-flex;
+
+   }
+   .sample_cell::nth-child(2) {
+    align-self: center;
+   }
+   .sample__cell:first-child {
+    order: 1;
+   }
+   .sample__cell:first-child(0){
+    order: 0;
+   }
+   .band-list {
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .band {
+    display: flex;
+    width: 300px;
+    border-radius: 10px;
+   }
+
+   .bridge {
+    display: flex;
+   flex-wrap: wrap;
+    gap: 10px 10px;
+ 
+ 
+   }
+   .bridge__cell {
+     display: flex;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    background-image: url('https://s-cdn.sportbox.ru/images/styles/upload/fp_fotos/3f/5d/a5549936c9c6421093508a334bba634866254f777ca10237391857.jpg');
+   
+   }
+   .bridge__cell--active {
+    background-color: red;
+   }
+
+
+
+
+   .mu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px red;
+   }
+   
+   .mu__title {
+    color: black;
+    font-size: 30px;
+    padding: 0 10px;
+   }
+  
+   
+   .mu__info {
+    margin-top: 30px;
+    padding: 0 10px;
+   }
+   .mu__stadium {
+    display: flex;
+    justify-content: space-between;
+   }
+   .mu__name {
+    color: red;
+    font-weight: 600;
+   }
+   .mu__bottom {
+     display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 0 10px 10px;
+    gap: 20px;
+  
+   }
+   .mu__link {
+    display: flex;
+    min-width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+   }
+   .mu__link {
+    flex: 1;
+   }
+.mu__team {
+    background-color: black;
+}
+.mu__link--wiki {
+    background-color: #ffff00;
+}
+.mu__link--site {
+    background-color: red;
+}
+.cards {
+  display: flex;
+  gap: 40px;
+
+}
+/*@media screen and (orientation: landscape) {
+    body {
+        background-color: orange;/*/
+
+.mc {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00bfff;
+   }
+    
+
+   .mc__title {
+    color: #00bfff;
+    font-size: 30px;
+    padding: 0 10px;
+   }
+   
+   .mc__info {
+    margin-top: 10px;
+    padding: 0 10px;
+   }
+   .mc__stadium {
+    display: flex;
+    justify-content: space-between;
+   }
+   .mc__name {
+    color: darkblue;
+    font-weight: 600;
+   }
+   .mc__bottom {
+     display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 0 10px 10px;
+    gap: 20px;
+  
+   }
+   .mc__link {
+    display: flex;
+    min-width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+   }
+   .mc__link {
+    flex: 1;
+   }
+
+.mc__link--wiki {
+    background-color: goldenrod;
+}
+.mc__link--site {
+    background-color: #00bfff;
+}
+.card__image {
+  width: 100%;
+  height: 250px;      /* фиксированная высота */
+  overflow: hidden;   /* обрезает лишнее */
+  border-radius: 10px;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* делает аккуратное заполнение */
+}
+.card--red .card__title {
+    color: red;
+}
+
+.liv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px red;
+   }
+   
+   .liv__title {
+    color: red;
+    font-size: 30px;
+    padding: 0 10px;
+   }
+   
+   .liv__info {
+    margin-top: 10px;
+    padding: 0 10px;
+   }
+   .liv__stadium {
+    display: flex;
+    justify-content: space-between;
+   }
+   .liv__name {
+    color: red;
+    font-weight: 600;
+   }
+   .liv__bottom {
+     display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 0 10px 10px;
+    gap: 20px;
+  
+   }
+   .liv__link {
+    display: flex;
+    min-width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+   }
+   .liv__link {
+    flex: 1;
+   }
+
+.liv__link--wiki {
+    background-color: black;
+}
+.liv__link--site {
+    background-color: red
+}
+
+.card__title {
+  margin-top: 15px;
+  padding: 0 10px;
+  font-size: 28px;
+}
+
+.card__title {
+  margin: 15px 0;
+}
+.mu,
+.mc,
+.liv {
+  transition: transform 0.3s, box-shadow 0.3 ease;
+}
+
+.mu:hover,
+.mc:hover,
+.liv:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+
+.mu:hover {
+  box-shadow: 0 20px 30px rgba(255,0,0,0.4);
+}
+
+.mc:hover {
+  box-shadow: 0 20px 30px rgba(0,191,255,0.4);
+}
+
+.liv:hover {
+  box-shadow: 0 20px 30px rgba(139,0,0,0.4);
+}
+
+.mu,
+.mc,
+.liv {
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.mu:hover,
+.mc:hover,
+.liv:hover {
+  transform: rotateY(10deg) rotateX(5deg) translateY(-10px);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+}
+.cards {
+  perspective: 1500px;
+}
+
+.mu,
+.mc,
+.liv {
+  position: relative;
+  overflow: hidden;
+}
+.mu::before,
+.mc::before,
+.liv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.5),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+.mu::before,
+.mc::before,
+.liv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.5),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
